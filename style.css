@@ -1,58 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
-
-* {
-    box-sizing: border-box;
+.wall {
+    background-image: url("num.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+.wrapper {
+    height: 381px;
+    width: 289.4px;
+    font-family: "Gotham Rounded", sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+.display-screen {
+    background-color: #2b2b2b;
+    height: 70px;
+    width: 289px;
+}
+
+button {
+    border: 0px;
+    margin-top: 2px;
+    height: 60px;
+    width: 69px;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #575757;
+    color: white;
+}
+
+button:active {
+    background-color: #2b2b2b;
+}
+
+.special-button {
+    width: 142px;
+}
+
+.display {
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-right: 4px;
+}
+
+.center-screen {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    width: 90vh;
-}
-
-.panel {
-    background-size: cover ;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.7s ease-in;
-}
-
-.panel h3 {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-}
-
-.panel.active {
-    flex: 5;
-}
-.panel.active h3 {
-    opacity: 1;
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100vw;
-    }
-    .panel:nth-of-type(4),.panel:nth-of-type(5) {
-        display: none;
-    }
+    text-align: center;
+    min-height: 100vh;
 }
