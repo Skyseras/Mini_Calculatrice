@@ -24,30 +24,30 @@
                 <div class="row-1">
                     <button class="b-r-1-c-1 special-button" onclick="makeZero()">AC</button>
                     <button class="b-r-1-c-2" onclick="deleteElement()">DEL</button>
-                    <button class="b-r-1-c-3" onclick="sendToDisplay('/')">÷</button>
+                    <button class="b-r-1-c-3" onclick="sendoperator('/')">÷</button>
                 </div>
                 <div class="row-2">
                     <button class="b-r-2-c-1" onclick="sendToDisplay(1)">1</button>
                     <button class="b-r-2-c-2" onclick="sendToDisplay(2)">2</button>
                     <button class="b-r-2-c-3" onclick="sendToDisplay(3)">3</button>
-                    <button class="b-r-2-c-4" onclick="sendToDisplay('*')">X</button>
+                    <button class="b-r-2-c-4" onclick="sendoperator('*')">X</button>
                 </div>
                 <div class="row-3">
                     <button class="b-r-3-c-1" onclick="sendToDisplay(4)">4</button>
                     <button class="b-r-3-c-2" onclick="sendToDisplay(5)">5</button>
                     <button class="b-r-3-c-3" onclick="sendToDisplay(6)">6</button>
-                    <button class="b-r-3-c-4" onclick="sendToDisplay('+')">+</button>
+                    <button class="b-r-3-c-4" onclick="sendoperator('+')">+</button>
 
                 </div>
                 <div class="row-4">
                     <button class="b-r-4-c-1" onclick="sendToDisplay(7)">7</button>
                     <button class="b-r-4-c-2" onclick="sendToDisplay(8)">8</button>
                     <button class="b-r-4-c-3" onclick="sendToDisplay(9)">9</button>
-                    <button class="b-r-4-c-4" onclick="sendToDisplay('-')">-</button>
+                    <button class="b-r-4-c-4" onclick="sendoperator('-')">-</button>
 
                 </div>
                 <div class="row-5">
-                    <button class="b-r-5-c-1" onclick="sendToDisplay('.')">.</button>
+                    <button id="point" class="b-r-5-c-1" onclick="sendToDisplaypoint('.')">.</button>
                     <button class="b-r-5-c-2" onclick="sendToDisplay(0)">0</button>
                     <button class="b-r-5-c-3 special-button" onclick="evaluateExpression()">=</button>
                 </div>
